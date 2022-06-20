@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/album_video_align_iv"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_margin="20dp"
+                android:rotation="90"
+                android:src="@drawable/btn_miniplayer_play"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/album_video_align_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="최신순"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/album_video_align_iv"
+                app:layout_constraintEnd_toStartOf="@+id/album_video_align_iv"
+                app:layout_constraintTop_toTopOf="@id/album_video_align_iv" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:id="@+id/album_video_mv1"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/album_video_align_tv"
+                >
+                <ImageView
+                    android:id="@+id/album_video_mv1_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/album_video_img"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+                <TextView
+                    android:id="@+id/album_video_mv1_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[MV] Celebrity"
+                    app:layout_constraintTop_toBottomOf="@id/album_video_mv1_iv"
+                    app:layout_constraintStart_toStartOf="@id/album_video_mv1_iv"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이유(IU) | 2021.03.06"
+                    app:layout_constraintTop_toBottomOf="@id/album_video_mv1_title_tv"
+                    app:layout_constraintStart_toStartOf="@id/album_video_mv1_iv"
+                    android:textColor="#000000"
+                    android:layout_margin="5dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:id="@+id/album_video_mv2"
+                app:layout_constraintTop_toBottomOf="@+id/album_video_mv1"
+                >
+                <ImageView
+                    android:id="@+id/album_video_mv2_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/album_video_img2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+                <TextView
+                    android:id="@+id/album_video_mv2_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[MV] GANADARA"
+                    app:layout_constraintTop_toBottomOf="@id/album_video_mv2_iv"
+                    app:layout_constraintStart_toStartOf="@id/album_video_mv2_iv"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이유(IU) | 2021.03.06"
+                    app:layout_constraintTop_toBottomOf="@id/album_video_mv2_title_tv"
+                    app:layout_constraintStart_toStartOf="@id/album_video_mv2_iv"
+                    android:textColor="#000000"
+                    android:layout_margin="5dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/album_video_mv3"
+                android:layout_margin="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/album_video_mv2"
+                >
+                <ImageView
+                    android:id="@+id/album_video_mv3_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/album_video_img3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+                <TextView
+                    android:id="@+id/album_video_mv3_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[MV] 밤편지"
+                    app:layout_constraintTop_toBottomOf="@id/album_video_mv3_iv"
+                    app:layout_constraintStart_toStartOf="@id/album_video_mv3_iv"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이유(IU) | 2021.03.06\n\n\n\n\n\n\n"
+                    app:layout_constraintTop_toBottomOf="@id/album_video_mv3_title_tv"
+                    app:layout_constraintStart_toStartOf="@id/album_video_mv3_iv"
+                    android:textColor="#000000"
+                    android:layout_margin="5dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
