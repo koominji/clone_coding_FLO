@@ -8,5 +8,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "FLO"
 include ':app'
-include ':albumactivity'
-include ':albumactivity_prac'
